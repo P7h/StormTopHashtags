@@ -15,8 +15,8 @@ This application has been tested in:<br>
 ## Features
 * Application retrieves tweets from Twitter stream (using [Twitter4J](http://twitter4j.org)).<br>
 * It calculates stats of the top hashtags every 30 seconds.
-* After processing, the application logs the top hashtags grouped by their count to the console and also to a log file.<br>
-* As of current day, this codebase has very minimal comments. I will be adding more comments as and when I get time.
+* After processing, the application logs the top hashtags grouped by their count to the console and also to a log file using Logback.<br>
+* In local mode, topology runs for 2 minutes and then shuts down. Topology run can be updated by modifying [this](src/main/java/org/p7h/storm/hashtags/topology/TopHashtagsTopology.java#L45) value.<br>
 * Also this project has been made compatible with both Eclipse IDE and IntelliJ IDEA. Import the project in your favorite IDE [which has Maven plugin installed] and you can quickly follow the code.
 
 ## Configuration
